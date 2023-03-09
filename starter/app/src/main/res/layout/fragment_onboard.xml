@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="onboard_fragment"
+            type="com.udacity.shoestore.ui.onboard.OnboardFragment" />
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_onboarding"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/on_boarding" />
+
+        <TextView
+            style="@style/textBoldStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_onBoarding"
+            android:textColor="@color/purple_700"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/textLightStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lorem_ipsum"
+            android:layout_marginHorizontal="40dp"
+            android:textColor="@color/textFont"
+            android:textAlignment="viewStart"
+            android:textSize="16sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:onClick="@{()-> onboard_fragment.onBoardingClicked()}"
+            android:text="@string/instructions"
+            android:textAllCaps="true"
+            app:strokeColor="@color/purple_500"
+            android:layout_marginHorizontal="60dp"
+            app:strokeWidth="3dp"
+            android:textColor="@color/purple_500"
+            android:textAppearance="@style/textBoldStyle"
+            app:cornerRadius="16dp" />
+
+    </LinearLayout>
+</layout>

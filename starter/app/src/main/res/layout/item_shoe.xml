@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="shoe_item"
+            type="com.udacity.shoestore.models.Shoe" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4sp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|start"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/textBoldStyle"
+                    android:text="@string/shoe_name"
+                    android:textColor="@color/textFont"
+                    android:textSize="16sp" />
+
+                <TextView
+                    style="@style/textRegularStyle"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:singleLine="true"
+                    android:text="@{shoe_item.name}"
+                    android:textColor="@color/purple_700"
+                    android:textSize="16sp"
+                    tools:text="@string/shoe_name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|start"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/textBoldStyle"
+                    android:text="@string/company"
+                    android:textColor="@color/textFont"
+                    android:textSize="16sp" />
+
+                <TextView
+                    style="@style/textRegularStyle"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:singleLine="true"
+                    android:text="@{shoe_item.company}"
+                    android:textColor="@color/purple_700"
+                    android:textSize="16sp"
+                    tools:text="@string/company" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|start"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/textBoldStyle"
+                    android:text="@string/shoe_size"
+                    android:textColor="@color/textFont"
+                    android:textSize="16sp" />
+
+                <TextView
+                    style="@style/textRegularStyle"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:singleLine="true"
+                    android:text="@{Double.toString(shoe_item.size)}"
+                    android:textColor="@color/purple_700"
+                    android:textSize="16sp"
+                    tools:text="@string/shoe_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:gravity="start|top"
+                    style="@style/textBoldStyle"
+                    android:text="@string/description"
+                    android:textColor="@color/textFont"
+                    android:textSize="16sp" />
+
+                <TextView
+                    style="@style/textRegularStyle"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@{shoe_item.description}"
+                    android:textColor="@color/purple_700"
+                    android:textSize="16sp"
+                    tools:text="@string/description" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>

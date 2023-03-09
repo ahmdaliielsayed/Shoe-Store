@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -16,4 +16,83 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="loginTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:textColorHint">@color/athens_gray2</item>
+        <item name="boxCornerRadiusBottomEnd">16dp</item>
+        <item name="boxCornerRadiusBottomStart">16dp</item>
+        <item name="boxCornerRadiusTopEnd">16dp</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="boxCornerRadiusTopStart">16dp</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="hintAnimationEnabled">true</item>
+        <item name="hintEnabled">true</item>
+    </style>
+
+    <style name="textLightStyle" parent="Widget.MaterialComponents.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textFont</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.Material3.Button" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="Widget.Material3.Button.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="enforceTextAppearance">false</item>
+        <item name="android:maxWidth">320dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:insetTop">4dp</item>
+        <item name="android:insetBottom">4dp</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.Material3.Button</item>
+    </style>
+
+    <style name="Widget.Material3.Button.OutlinedButton" parent="Widget.Material3.Button.TextButton">
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:paddingRight">24dp</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="textBoldStyle" parent="Widget.MaterialComponents.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textFont</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="textRegularStyle" parent="Widget.MaterialComponents.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textFont</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="textMediumStyle" parent="Widget.MaterialComponents.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textFont</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="editTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/purple_700</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">@drawable/et_shape</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:inputType">text</item>
+    </style>
 </resources>
