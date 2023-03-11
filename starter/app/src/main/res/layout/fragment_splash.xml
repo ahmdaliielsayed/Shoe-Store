@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+<layout xmlns:android="http://schemas.android.com/apk/res/android" >
 
     <data>
         <variable
@@ -8,6 +7,7 @@
             type="com.udacity.shoestore.ui.splash.SplashFragment" />
     </data>
 
+    <!-- This is a view group that aligns all children in a single direction, vertically or horizontally. -->
     <LinearLayout
         android:orientation="vertical"
         android:gravity="center"

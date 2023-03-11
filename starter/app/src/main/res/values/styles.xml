@@ -19,14 +19,14 @@
     <style name="loginTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:padding">2dp</item>
+        <item name="android:padding">@dimen/padding_2</item>
         <item name="android:textColorHint">@color/athens_gray2</item>
-        <item name="boxCornerRadiusBottomEnd">16dp</item>
-        <item name="boxCornerRadiusBottomStart">16dp</item>
-        <item name="boxCornerRadiusTopEnd">16dp</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/padding_16</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/padding_16</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/padding_16</item>
         <item name="android:textAlignment">viewStart</item>
-        <item name="boxCornerRadiusTopStart">16dp</item>
-        <item name="boxStrokeWidth">2dp</item>
+        <item name="boxCornerRadiusTopStart">@dimen/padding_16</item>
+        <item name="boxStrokeWidth">@dimen/padding_2</item>
         <item name="hintAnimationEnabled">true</item>
         <item name="hintEnabled">true</item>
     </style>
@@ -35,7 +35,7 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@color/textFont</item>
-        <item name="android:textSize">16sp</item>
+        <item name="android:textSize">@dimen/padding_s_16</item>
     </style>
 
     <style name="ShapeAppearanceOverlay.Material3.Button" parent="">
@@ -44,20 +44,20 @@
 
     <style name="Widget.Material3.Button.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
         <item name="enforceTextAppearance">false</item>
-        <item name="android:maxWidth">320dp</item>
-        <item name="android:paddingLeft">12dp</item>
-        <item name="android:paddingRight">12dp</item>
-        <item name="android:paddingTop">6dp</item>
-        <item name="android:paddingBottom">6dp</item>
-        <item name="android:insetTop">4dp</item>
-        <item name="android:insetBottom">4dp</item>
+        <item name="android:maxWidth">@dimen/padding_320</item>
+        <item name="android:paddingLeft">@dimen/padding_12</item>
+        <item name="android:paddingRight">@dimen/padding_12</item>
+        <item name="android:paddingTop">@dimen/padding_8</item>
+        <item name="android:paddingBottom">@dimen/padding_8</item>
+        <item name="android:insetTop">@dimen/padding_4</item>
+        <item name="android:insetBottom">@dimen/padding_4</item>
         <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.Material3.Button</item>
     </style>
 
     <style name="Widget.Material3.Button.OutlinedButton" parent="Widget.Material3.Button.TextButton">
-        <item name="android:paddingLeft">24dp</item>
-        <item name="android:paddingRight">24dp</item>
-        <item name="strokeWidth">1dp</item>
+        <item name="android:paddingLeft">@dimen/padding_24</item>
+        <item name="android:paddingRight">@dimen/padding_24</item>
+        <item name="strokeWidth">@dimen/padding_1</item>
     </style>
 
     <style name="textBoldStyle" parent="Widget.MaterialComponents.TextView">
@@ -66,33 +66,33 @@
         <item name="android:textColor">@color/textFont</item>
         <item name="android:textAlignment">viewStart</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textSize">16sp</item>
+        <item name="android:textSize">@dimen/padding_s_16</item>
     </style>
 
     <style name="textRegularStyle" parent="Widget.MaterialComponents.TextView">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@color/textFont</item>
-        <item name="android:textSize">16sp</item>
+        <item name="android:textSize">@dimen/padding_s_16</item>
     </style>
 
     <style name="textMediumStyle" parent="Widget.MaterialComponents.TextView">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@color/textFont</item>
-        <item name="android:textSize">12sp</item>
+        <item name="android:textSize">@dimen/padding_s_12</item>
     </style>
 
     <style name="editTextStyle" parent="Widget.AppCompat.EditText">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@color/purple_700</item>
-        <item name="android:textSize">12sp</item>
+        <item name="android:textSize">@dimen/padding_s_12</item>
         <item name="android:background">@drawable/et_shape</item>
         <item name="android:singleLine">true</item>
         <item name="android:textAlignment">viewStart</item>
         <item name="android:imeOptions">actionNext</item>
-        <item name="android:padding">10dp</item>
+        <item name="android:padding">@dimen/padding_10</item>
         <item name="android:inputType">text</item>
     </style>
 </resources>

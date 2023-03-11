@@ -13,6 +13,7 @@
             type="com.udacity.shoestore.ui.details.viewmodel.DetailsShoeViewModel" />
     </data>
 
+    <!-- This is a view group that aligns all children in a single direction, vertically or horizontally. -->
     <LinearLayout
         android:id="@+id/lyParent"
         android:layout_width="match_parent"
@@ -36,7 +37,7 @@
             android:gravity="center"
             android:text="@string/add_new_shoe"
             android:textColor="@color/purple_700"
-            android:textSize="16sp" />
+            android:textSize="@dimen/padding_s_16" />
 
         <ScrollView
             android:layout_width="match_parent"
@@ -45,46 +46,49 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="8dp"
+                android:layout_marginHorizontal="@dimen/padding_8"
                 android:orientation="vertical">
 
                 <TextView
                     style="@style/textMediumStyle"
                     android:text="@string/shoe_name"
                     android:textColor="@color/purple_700"
-                    android:textSize="12sp" />
+                    android:textSize="@dimen/padding_s_12" />
 
                 <EditText
                     android:id="@+id/etName"
                     style="@style/editTextStyle"
+                    android:layout_height="@dimen/padding_48"
                     android:hint="@string/enter_shoe_name"
                     android:importantForAutofill="no"
                     android:text="@={viewModel.shoeName}" />
 
                 <TextView
                     style="@style/textMediumStyle"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="@dimen/padding_8"
                     android:text="@string/company"
                     android:textColor="@color/purple_700"
-                    android:textSize="12sp" />
+                    android:textSize="@dimen/padding_s_12" />
 
                 <EditText
                     android:id="@+id/etCompany"
                     style="@style/editTextStyle"
+                    android:layout_height="@dimen/padding_48"
                     android:hint="@string/enter_company"
                     android:importantForAutofill="no"
                     android:text="@={viewModel.shoeCompany}" />
 
                 <TextView
                     style="@style/textMediumStyle"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="@dimen/padding_8"
                     android:text="@string/shoe_size"
                     android:textColor="@color/purple_700"
-                    android:textSize="12sp" />
+                    android:textSize="@dimen/padding_s_12" />
 
                 <EditText
                     android:id="@+id/etSize"
                     style="@style/editTextStyle"
+                    android:layout_height="@dimen/padding_48"
                     android:ems="2"
                     android:hint="@string/enter_shoe_size"
                     android:importantForAutofill="no"
@@ -94,15 +98,15 @@
 
                 <TextView
                     style="@style/textMediumStyle"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="@dimen/padding_8"
                     android:text="@string/description"
                     android:textColor="@color/purple_700"
-                    android:textSize="12sp" />
+                    android:textSize="@dimen/padding_s_12" />
 
                 <EditText
                     android:id="@+id/etDec"
                     style="@style/editTextStyle"
-                    android:layout_height="72dp"
+                    android:layout_height="@dimen/padding_72"
                     android:gravity="top|start"
                     android:hint="@string/enter_description"
                     android:imeOptions="actionDone"
@@ -110,45 +114,45 @@
                     android:inputType="textMultiLine"
                     android:overScrollMode="always"
                     android:scrollIndicators="end"
-                    android:scrollbarSize="48dp"
+                    android:scrollbarSize="@dimen/padding_48"
                     android:scrollbars="vertical|horizontal"
                     android:text="@={viewModel.shoeDescription}" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="16dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginHorizontal="@dimen/padding_16"
+                    android:layout_marginTop="@dimen/padding_8"
                     android:orientation="horizontal">
 
                     <com.google.android.material.button.MaterialButton
                         style="@style/Widget.MaterialComponents.Button.TextButton"
-                        android:layout_width="0dp"
+                        android:layout_width="@dimen/padding_0"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:insetTop="0dp"
-                        android:insetBottom="0dp"
+                        android:insetTop="@dimen/padding_0"
+                        android:insetBottom="@dimen/padding_0"
                         android:onClick="@{()-> details_fragment.onCancelClicked()}"
                         android:text="@string/cancel"
                         android:textAllCaps="true"
                         android:textAppearance="@style/textBoldStyle"
                         android:textColor="@color/teal_200"
-                        android:textSize="14sp" />
+                        android:textSize="@dimen/padding_s_14" />
 
                     <com.google.android.material.button.MaterialButton
-                        android:layout_width="0dp"
+                        android:layout_width="@dimen/padding_0"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
+                        android:layout_marginStart="@dimen/padding_8"
                         android:layout_weight="1.7"
                         android:backgroundTint="@color/purple_700"
-                        android:insetTop="0dp"
-                        android:insetBottom="0dp"
+                        android:insetTop="@dimen/padding_0"
+                        android:insetBottom="@dimen/padding_0"
                         android:onClick="@{()-> details_fragment.onSaveClicked()}"
                         android:text="@string/save_shoe"
                         android:textAllCaps="true"
                         android:textAppearance="@style/textBoldStyle"
-                        android:textSize="14sp"
-                        app:cornerRadius="16dp" />
+                        android:textSize="@dimen/padding_s_14"
+                        app:cornerRadius="@dimen/padding_16" />
                 </LinearLayout>
             </LinearLayout>
         </ScrollView>

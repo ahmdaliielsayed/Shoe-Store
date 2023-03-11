@@ -8,6 +8,7 @@
             type="com.udacity.shoestore.ui.onboard.OnboardFragment" />
     </data>
 
+    <!-- This is a view group that aligns all children in a single direction, vertically or horizontally. -->
     <LinearLayout
         android:orientation="vertical"
         android:gravity="center"
@@ -28,7 +29,7 @@
             android:text="@string/welcome_onBoarding"
             android:textColor="@color/purple_700"
             android:textAlignment="center"
-            android:textSize="16sp"
+            android:textSize="@dimen/padding_s_16"
             android:textStyle="bold" />
 
         <TextView
@@ -36,27 +37,27 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/lorem_ipsum"
-            android:layout_marginHorizontal="40dp"
+            android:layout_marginHorizontal="@dimen/padding_40"
             android:textColor="@color/textFont"
             android:textAlignment="viewStart"
-            android:textSize="16sp" />
+            android:textSize="@dimen/padding_s_16" />
 
         <com.google.android.material.button.MaterialButton
             android:layout_width="match_parent"
             style="@style/Widget.Material3.Button.OutlinedButton"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:insetTop="0dp"
-            android:insetBottom="0dp"
+            android:layout_marginTop="@dimen/padding_8"
+            android:insetTop="@dimen/padding_0"
+            android:insetBottom="@dimen/padding_0"
             android:onClick="@{()-> onboard_fragment.onBoardingClicked()}"
             android:text="@string/instructions"
             android:textAllCaps="true"
             app:strokeColor="@color/purple_500"
-            android:layout_marginHorizontal="60dp"
-            app:strokeWidth="3dp"
+            android:layout_marginHorizontal="@dimen/padding_60"
+            app:strokeWidth="@dimen/padding_3"
             android:textColor="@color/purple_500"
             android:textAppearance="@style/textBoldStyle"
-            app:cornerRadius="16dp" />
+            app:cornerRadius="@dimen/padding_16" />
 
     </LinearLayout>
 </layout>

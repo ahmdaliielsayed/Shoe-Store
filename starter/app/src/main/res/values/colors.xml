@@ -5,9 +5,9 @@
     <color name="colorAccent">#D81B60</color>
 
     <color name="athens_gray2">#C9C9C9</color>
-    <color name="purple_700">#308ABA</color>
+    <color name="purple_700">#377291</color>
     <color name="textFont">#3C3C3C</color>
     <color name="teal_200">#FFB300</color>
-    <color name="purple_500">#3CA7DF</color>
+    <color name="purple_500">#377291</color>
     <color name="white">#FFFFFFFF</color>
 </resources>

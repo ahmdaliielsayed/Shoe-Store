@@ -9,6 +9,7 @@
             type="com.udacity.shoestore.ui.login.LoginFragment" />
     </data>
 
+    <!-- I used constraint for different screen size -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraint_layout"
         android:layout_width="match_parent"
@@ -18,12 +19,12 @@
             android:id="@+id/materialCardView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="8dp"
-            app:cardCornerRadius="16dp"
-            app:cardElevation="8dp"
-            app:cardMaxElevation="1dp"
+            android:layout_marginHorizontal="@dimen/padding_8"
+            app:cardCornerRadius="@dimen/padding_16"
+            app:cardElevation="@dimen/padding_8"
+            app:cardMaxElevation="@dimen/padding_1"
             app:cardUseCompatPadding="true"
-            app:contentPadding="8dp"
+            app:contentPadding="@dimen/padding_8"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -36,8 +37,8 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/emailContainer"
                     style="@style/loginTextInputLayout"
-                    android:layout_marginHorizontal="8dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginHorizontal="@dimen/padding_8"
+                    android:layout_marginTop="@dimen/padding_8"
                     android:hint="@string/email"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -59,7 +60,7 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/passwordContainer"
                     style="@style/loginTextInputLayout"
-                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginHorizontal="@dimen/padding_8"
                     android:hint="@string/password"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -84,8 +85,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="16dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginHorizontal="@dimen/padding_16"
+                    android:layout_marginTop="@dimen/padding_8"
                     android:orientation="vertical"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -95,32 +96,31 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:backgroundTint="@color/purple_700"
-                        android:insetTop="0dp"
-                        android:insetBottom="0dp"
+                        android:insetTop="@dimen/padding_0"
+                        android:insetBottom="@dimen/padding_0"
                         android:onClick="@{() -> login_fragment.onLoginClicked()}"
                         android:text="@string/login"
                         android:textAllCaps="true"
                         android:textAppearance="@style/textLightStyle"
-                        android:textSize="16sp"
-                        app:cornerRadius="16sp" />
+                        android:textSize="@dimen/padding_s_16"
+                        app:cornerRadius="@dimen/padding_16" />
 
                     <com.google.android.material.button.MaterialButton
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         style="@style/Widget.Material3.Button.OutlinedButton"
-                        android:layout_marginTop="8dp"
-                        android:insetTop="0dp"
-                        android:insetBottom="0dp"
+                        android:layout_marginTop="@dimen/padding_8"
+                        android:insetTop="@dimen/padding_0"
+                        android:insetBottom="@dimen/padding_0"
                         android:onClick="@{()-> login_fragment.onLoginWithAnExistingAccountClicked()}"
                         android:text="@string/login_existing_account"
                         android:textAllCaps="true"
                         android:textAppearance="@style/textLightStyle"
                         android:textColor="@color/teal_200"
-                        android:textSize="11sp"
-                        app:cornerRadius="16dp"
+                        android:textSize="@dimen/padding_s_16"
+                        app:cornerRadius="@dimen/padding_16"
                         app:strokeColor="@color/teal_200"
-                        app:strokeWidth="2dp" />
-
+                        app:strokeWidth="@dimen/padding_2" />
                 </LinearLayout>
             </androidx.constraintlayout.widget.ConstraintLayout>
         </com.google.android.material.card.MaterialCardView>

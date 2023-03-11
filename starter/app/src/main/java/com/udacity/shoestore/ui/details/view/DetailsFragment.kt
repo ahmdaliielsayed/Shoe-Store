@@ -46,9 +46,11 @@ class DetailsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _dataBinder = DataBindingUtil.inflate(inflater, R.layout.fragment_details, container, false)
-        dataBinder.detailsFragment = this
-        dataBinder.lifecycleOwner = this
-        dataBinder.viewModel = mViewModel
+        with(dataBinder) {
+            detailsFragment = this@DetailsFragment
+            lifecycleOwner = this@DetailsFragment
+            viewModel = mViewModel
+        }
         return dataBinder.root
     }
 
@@ -98,14 +100,12 @@ class DetailsFragment : Fragment() {
     }
 
     fun onCancelClicked() {
-//        onDestroyView()
         navController.navigate(R.id.action_detailsFragment_to_homeFragment)
     }
 
     fun onSaveClicked() {
         if (validationInput()) {
             Toast.makeText(context, getString(R.string.saved), Toast.LENGTH_LONG).show()
-//        onDestroyView()
             navController.navigate(R.id.action_detailsFragment_to_homeFragment)
         }
     }

@@ -13,15 +13,16 @@
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="4sp"
+        app:cardCornerRadius="@dimen/padding_8"
+        app:cardElevation="@dimen/padding_4"
         app:cardUseCompatPadding="true">
 
+        <!-- This is a view group that aligns all children in a single direction, vertically or horizontally. -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="8dp">
+            android:padding="@dimen/padding_8">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -33,16 +34,16 @@
                     style="@style/textBoldStyle"
                     android:text="@string/shoe_name"
                     android:textColor="@color/textFont"
-                    android:textSize="16sp" />
+                    android:textSize="@dimen/padding_s_16" />
 
                 <TextView
                     style="@style/textRegularStyle"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="@dimen/padding_8"
+                    android:layout_marginEnd="@dimen/padding_8"
                     android:singleLine="true"
                     android:text="@{shoe_item.name}"
                     android:textColor="@color/purple_700"
-                    android:textSize="16sp"
+                    android:textSize="@dimen/padding_s_16"
                     tools:text="@string/shoe_name" />
             </LinearLayout>
 
@@ -56,16 +57,16 @@
                     style="@style/textBoldStyle"
                     android:text="@string/company"
                     android:textColor="@color/textFont"
-                    android:textSize="16sp" />
+                    android:textSize="@dimen/padding_s_16" />
 
                 <TextView
                     style="@style/textRegularStyle"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="@dimen/padding_8"
+                    android:layout_marginEnd="@dimen/padding_8"
                     android:singleLine="true"
                     android:text="@{shoe_item.company}"
                     android:textColor="@color/purple_700"
-                    android:textSize="16sp"
+                    android:textSize="@dimen/padding_s_16"
                     tools:text="@string/company" />
             </LinearLayout>
 
@@ -79,16 +80,16 @@
                     style="@style/textBoldStyle"
                     android:text="@string/shoe_size"
                     android:textColor="@color/textFont"
-                    android:textSize="16sp" />
+                    android:textSize="@dimen/padding_s_16" />
 
                 <TextView
                     style="@style/textRegularStyle"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="@dimen/padding_8"
+                    android:layout_marginEnd="@dimen/padding_8"
                     android:singleLine="true"
                     android:text="@{Double.toString(shoe_item.size)}"
                     android:textColor="@color/purple_700"
-                    android:textSize="16sp"
+                    android:textSize="@dimen/padding_s_16"
                     tools:text="@string/shoe_size" />
             </LinearLayout>
 
@@ -102,20 +103,17 @@
                     style="@style/textBoldStyle"
                     android:text="@string/description"
                     android:textColor="@color/textFont"
-                    android:textSize="16sp" />
+                    android:textSize="@dimen/padding_s_16" />
 
                 <TextView
                     style="@style/textRegularStyle"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="@dimen/padding_8"
+                    android:layout_marginEnd="@dimen/padding_8"
                     android:text="@{shoe_item.description}"
                     android:textColor="@color/purple_700"
-                    android:textSize="16sp"
+                    android:textSize="@dimen/padding_s_16"
                     tools:text="@string/description" />
             </LinearLayout>
-
-
         </LinearLayout>
-
     </com.google.android.material.card.MaterialCardView>
 </layout>
