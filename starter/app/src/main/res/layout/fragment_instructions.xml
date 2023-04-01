@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
+
         <variable
             name="instructions_fragment"
             type="com.udacity.shoestore.ui.instructions.InstructionsFragment" />
@@ -10,53 +11,56 @@
 
     <!-- This is a view group that aligns all children in a single direction, vertically or horizontally. -->
     <LinearLayout
-        android:orientation="vertical"
-        android:gravity="center|top"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:gravity="center|top"
+        android:orientation="vertical">
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/header_shos"
             android:adjustViewBounds="true"
-            android:contentDescription="@string/instructions" />
+            android:contentDescription="@string/instructions"
+            android:src="@drawable/header_shos" />
 
         <TextView
             style="@style/textBoldStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_8"
             android:text="@string/instructions_screen"
             android:textAlignment="center"
             android:textColor="@color/purple_700"
-            android:textSize="@dimen/padding_s_16"
+            android:textSize="@dimen/padding_s_20"
             android:textStyle="bold" />
 
         <TextView
             style="@style/textLightStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/lorem_ipsum"
             android:layout_marginHorizontal="@dimen/padding_40"
-            android:textColor="@color/textFont"
+            android:layout_marginTop="@dimen/padding_8"
+            android:layout_marginBottom="@dimen/padding_8"
+            android:text="@string/lorem_ipsum"
             android:textAlignment="viewStart"
+            android:textColor="@color/textFont"
             android:textSize="@dimen/padding_s_16" />
 
         <com.google.android.material.button.MaterialButton
-            android:layout_width="match_parent"
             style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/padding_60"
             android:layout_marginTop="@dimen/padding_8"
             android:insetTop="@dimen/padding_0"
             android:insetBottom="@dimen/padding_0"
             android:onClick="@{()-> instructions_fragment.introductionsClicked()}"
             android:text="@string/home_list"
             android:textAllCaps="true"
-            app:strokeColor="@color/purple_500"
-            android:layout_marginHorizontal="@dimen/padding_60"
-            app:strokeWidth="@dimen/padding_3"
-            android:textColor="@color/purple_500"
             android:textAppearance="@style/textBoldStyle"
-            app:cornerRadius="@dimen/padding_16" />
+            android:textColor="@color/purple_500"
+            app:cornerRadius="@dimen/padding_16"
+            app:strokeColor="@color/purple_500"
+            app:strokeWidth="@dimen/padding_3" />
     </LinearLayout>
 </layout>

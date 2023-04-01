@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android" >
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+
         <variable
             name="splash_fragment"
             type="com.udacity.shoestore.ui.splash.SplashFragment" />
@@ -9,13 +11,21 @@
 
     <!-- This is a view group that aligns all children in a single direction, vertically or horizontally. -->
     <LinearLayout
-        android:orientation="vertical"
-        android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="@dimen/padding_120"
+            android:layout_height="@dimen/padding_120"
+            android:scaleType="fitXY"
+            android:src="@drawable/logo_app"
+            tools:ignore="ContentDescription" />
 
         <ProgressBar
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content" />
     </LinearLayout>
 </layout>

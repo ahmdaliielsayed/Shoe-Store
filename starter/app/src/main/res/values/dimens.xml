@@ -14,9 +14,12 @@
     <dimen name="padding_48">48dp</dimen>
     <dimen name="padding_60">60dp</dimen>
     <dimen name="padding_72">72dp</dimen>
+    <dimen name="padding_120">120dp</dimen>
     <dimen name="padding_320">320dp</dimen>
 
+    <dimen name="padding_s_2">2sp</dimen>
     <dimen name="padding_s_12">12sp</dimen>
     <dimen name="padding_s_14">14sp</dimen>
     <dimen name="padding_s_16">16sp</dimen>
+    <dimen name="padding_s_20">20sp</dimen>
 </resources>

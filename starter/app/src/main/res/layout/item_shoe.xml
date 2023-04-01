@@ -99,8 +99,8 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:gravity="start|top"
                     style="@style/textBoldStyle"
+                    android:gravity="start|top"
                     android:text="@string/description"
                     android:textColor="@color/textFont"
                     android:textSize="@dimen/padding_s_16" />

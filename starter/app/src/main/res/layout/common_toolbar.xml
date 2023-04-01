@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
@@ -16,11 +15,11 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="center"
             android:animateLayoutChanges="true"
             android:background="@color/purple_500"
-            android:minHeight="?attr/actionBarSize"
-            android:layout_gravity="center"
             android:gravity="center"
+            android:minHeight="?attr/actionBarSize"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
             <TextView
@@ -28,19 +27,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="@color/white"
-                android:singleLine="true"
-                android:ellipsize="marquee"
-                app:autoSizeTextType="none"
-                android:breakStrategy="balanced"
-                android:textSize="16sp"
-                app:autoSizeMaxTextSize="16sp"
-                app:autoSizeMinTextSize="11sp"
-                app:autoSizeStepGranularity="1sp"
-                tools:targetApi="o"
-                android:layout_marginEnd="@dimen/padding_8"
                 android:layout_marginStart="@dimen/padding_8"
+                android:layout_marginEnd="@dimen/padding_8"
+                android:breakStrategy="balanced"
+                android:ellipsize="marquee"
                 android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/padding_s_16"
+                app:autoSizeMaxTextSize="@dimen/padding_s_16"
+                app:autoSizeMinTextSize="@dimen/padding_s_12"
+                app:autoSizeStepGranularity="@dimen/padding_s_2"
+                app:autoSizeTextType="none"
+                tools:targetApi="o"
                 tools:text="screen name" />
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
