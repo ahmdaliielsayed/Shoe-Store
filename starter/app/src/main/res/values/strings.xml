@@ -17,9 +17,13 @@
     <string name="add_shoes">Add Shoe</string>
     <string name="menu_txt_main_screen">Shoe List</string>
     <string name="shoe_name">"Shoe Name: "</string>
+    <string name="shoe_name_d">Shoe Name</string>
     <string name="company">"    Company: "</string>
+    <string name="company_d">Company</string>
     <string name="shoe_size">"   Shoe Size: "</string>
+    <string name="shoe_size_d">Shoe Size</string>
     <string name="description">"Description: "</string>
+    <string name="description_d">Description</string>
     <string name="add_new_shoe">Add New Shoe</string>
     <string name="enter_shoe_name">Enter Shoe Name</string>
     <string name="enter_company">Enter Company</string>

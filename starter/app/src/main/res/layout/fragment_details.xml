@@ -60,7 +60,7 @@
 
                 <TextView
                     style="@style/textMediumStyle"
-                    android:text="@string/shoe_name"
+                    android:text="@string/shoe_name_d"
                     android:textColor="@color/purple_700"
                     android:textSize="@dimen/padding_s_16" />
 
@@ -75,7 +75,7 @@
                 <TextView
                     style="@style/textMediumStyle"
                     android:layout_marginTop="@dimen/padding_8"
-                    android:text="@string/company"
+                    android:text="@string/company_d"
                     android:textColor="@color/purple_700"
                     android:textSize="@dimen/padding_s_16" />
 
@@ -90,7 +90,7 @@
                 <TextView
                     style="@style/textMediumStyle"
                     android:layout_marginTop="@dimen/padding_8"
-                    android:text="@string/shoe_size"
+                    android:text="@string/shoe_size_d"
                     android:textColor="@color/purple_700"
                     android:textSize="@dimen/padding_s_16" />
 
@@ -108,7 +108,7 @@
                 <TextView
                     style="@style/textMediumStyle"
                     android:layout_marginTop="@dimen/padding_8"
-                    android:text="@string/description"
+                    android:text="@string/description_d"
                     android:textColor="@color/purple_700"
                     android:textSize="@dimen/padding_s_16" />
 
