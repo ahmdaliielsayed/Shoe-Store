@@ -7,76 +7,26 @@ This project will consist of five screens. You don't have to create a shoe store
 4. Shoe Listing screen
 5. Shoe Detail screen for adding a new shoe
 
-## Getting Started
+## Screenshots
 
-Open the starter project in the latest stable version of Android Studio.
-
-Open the starter project in Android Studio
-
-##Steps
-
-1. Open the starter project in Android Studio
-
-2. Add the navigation libraries to the app build.gradle file
-
-3. Add the safe-arg plugin to the main and app build.gradle file
-
-4. Create a new navigation xml file
-
-5. Create a new Login destination.
-
-   * Include email and password labels 
-
-   - Include email and password fields
-   - Create buttons for creating a new login and logging in with an existing account
-   - Clicking either button should navigate to the Welcome Screen.
-
-6. Create a new Welcome screen destination that includes:
-
-   * A new layout
-   * At least 2 textviews
-   * A navigation button with actions to navigate to the instructions screen
-
-7. Create a new Instruction destination that includes:
-
-   * A new layout
-   * At least 2 textviews
-   * A navigation button with actions to navigate to the shoe list screen
-
-8. Create a class that extends ViewModel
-
-   *  Use a LiveData field that returns the list of shoes
-
-9. Create a new Shoe List destination that includes:
-
-   * A new layout
-   * A ScrollView
-   * A LinearLayout for Shoe Items
-   * A FloatingActionButton with an action to navigate to the shoe detail screen
-
-10. In MainActivity, setup the nav controller with the toolbar and an AppBarConfiguration.
-
-11. Create a new Shoe Detail destination that includes:
-
-    * A new layout
-    * A TextView label and EditView for the
-      * Shoe Name
-      * Company
-      * Shoe Size
-      * Description
-    * A Cancel button with an action to navigate back to the shoe list screen
-    * A Save button with an action to navigate back to the shoe list screen and add a new Shoe to the Shoe View Model
-
-12. Make sure you can’t go back to onboarding screens
-
-13. In the Shoe List screen:
-
-    * Use an Activity level ViewModel to hold a list of Shoes (use by activityViewModels)
-    * Observe the shoes variable from the ViewModel
-    * Use DataBindingUtil to inflate the shoe_list layout
-    * Add a new layout item into the scrollview for each shoe.# KotlinNanoDegree_ShoeStore
-  
-
-<p>
-
-</p>
+<table>
+  <tr>
+    <td>
+      <img src = "https://user-images.githubusercontent.com/29761752/229318904-b80943fe-b478-4d84-959c-dcc2ff9771f4.png"/>
+    </td>
+    <td>
+      <img src = "https://user-images.githubusercontent.com/29761752/229318927-cf74f3bb-d4b5-43e4-a0cf-5f3c381a5b64.png"/>
+    </td>
+    <td>
+      <img src = "https://user-images.githubusercontent.com/29761752/229318944-5c4f0fdd-ddf7-4802-b264-db1a585cc452.png"/>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src = "https://user-images.githubusercontent.com/29761752/229318973-7c863348-af8b-40d4-b0ff-9bd6e418563b.png"/>
+    </td>
+    <td>
+      <img src = "https://user-images.githubusercontent.com/29761752/229318979-8b5b5c12-d4a2-4787-a186-669c08be4ab7.png"/>
+    </td>
+  </tr>
+</table>
